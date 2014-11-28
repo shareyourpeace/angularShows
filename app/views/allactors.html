@@ -1,0 +1,18 @@
+<h2>Show and Actors</h2>
+<br />
+Filter: <input type="text" ng-model="actorFilter.character" />
+<br /><br />
+<table class="table">
+    <tr>
+        <th>Actors</th>
+        <th>Show</th>
+    </tr>
+    <tr ng-repeat="actor in actors | filter:actorFilter" class="repeat-animation">
+        <td>{{actor.character}}</td>
+        <!-- I have tried a bunch of things; 
+        I feel certain that the line of code above should output data.
+        the line below is just the last thing I have tried but I feel like it would need
+        to loop thru the shows to fetch the data.-->
+        <td>{{show.actor}}</td>
+    </tr>
+</table>

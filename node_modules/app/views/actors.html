@@ -1,0 +1,15 @@
+<h2>Actors from {{show.name }}</h2>
+<br/>
+<table class="table table-striped">
+    <tr>
+        <th>Character</th> 
+        <th>played by </th>
+        <th>Actor</th>
+    </tr>
+    <tr>
+        <tr ng-repeat = "actor in show.actors" class="repeat-animation">
+        <td>{{actor.character}}</td>
+        <td></td>
+        <td>{{actor.actor}}</td>
+    </tr>  
+</table>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html ng-app ="showsApp">
+<head>
+    <title>Iterating Over Tv Show Data With Animations </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+    <link href="styles/animations.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <ul class="nav navbar-nav">
+                <li><a href="#/shows">tv shows</a></li>
+                <li><a href="#/actors">actors</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div ng-view class="slide-animation"></div>
+    </main>  
+
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <script src="scripts/angular-animate.js"></script>
+    <script src="app/tvshowsApp.js"></script>
+    <script src="app/controllers/tvshowsController.js"></script>
+    <script src="app/controllers/actorsController.js"></script>
+    <script src="app/controllers/allActorsController.js"></script>
+    <script src="app/services/showsFactory.js"></script>
+    <script src="app/services/valuesTvShows.js"></script>
+</body>
+</html>
